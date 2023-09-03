@@ -1,13 +1,12 @@
-package googleTest;
-
-import coreWebDriver.BaseSeleniumTest;
-import io.qameta.allure.Step;
-import misc.IntGenerate;
-import org.junit.jupiter.api.Assertions;
+import org.example.coreWebDriver.BaseSeleniumTest;
+import org.example.googleTest.Authorization;
+import org.example.googleTest.MessagePage;
+import org.example.misc.IntGenerate;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class GoogletestTest  extends BaseSeleniumTest {
+public class GoogletestTest extends BaseSeleniumTest {
+
     @Test
 
     @DisplayName("Проверка отправки письма самому себе")
@@ -23,24 +22,8 @@ public class GoogletestTest  extends BaseSeleniumTest {
                 .writeBody(body)
                 .clickSendButton()
                 .checkAssignMessage(title);
-
-
     }
 
 
-
-
-
-//        MessagePage messagePage = new MessagePage();
-//
-//        messagePage.checkWriteButton();
-//        messagePage.writeHeaderEmail();
-//        messagePage.writeTopic(title);
-//        messagePage.writeBody(body);
-//        messagePage.clickSendButton();
-
-
-
-
-    }
+}
 
